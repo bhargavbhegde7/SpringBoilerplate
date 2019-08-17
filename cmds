@@ -1,1 +1,8 @@
+mysql container - not using this anyway
 docker run -d -p 2012:3306 --name mysql-docker-container -e MYSQL_ROOT_PASSWORD=root123 -e MYSQL_DATABASE=employees -e MYSQL_USER=app_user -e MYSQL_PASSWORD=test123 mysql:latest
+
+build the docker image out of the spring java application
+docker build SpringBoilerplate -t springhello
+
+run the spring container
+docker run -t --name spring-app-container -p 8070:8070 springhello
