@@ -4,11 +4,7 @@ pipeline {
     stage('build') {
       steps {
         sh 'mvn clean package'
-      }
-    }
-    stage('create docker image') {
-      steps {
-        echo 'building the docker image now since build went well'
+        sh 'docker build -t spring-app -f Dockerfile .'
       }
     }
   }
