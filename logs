@@ -1,0 +1,37 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.6.RELEASE)
+
+2019-08-16 16:22:45.960  INFO 2531 --- [           main] com.bhegde.tryapp.MainApp                : Starting MainApp v0.0.1-SNAPSHOT on instance1 with PID 2531 (/home/g1_hegde_bhargava/SpringBoilerplate/target/SpringHello.jar started by g1_hegde_bhargava in /home/g1_hegde_bhargava/SpringBoilerplate)
+2019-08-16 16:22:45.970  INFO 2531 --- [           main] com.bhegde.tryapp.MainApp                : No active profile set, falling back to default profiles: default
+2019-08-16 16:22:48.503  INFO 2531 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-16 16:22:48.704  INFO 2531 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 159ms. Found 1 repository interfaces.
+2019-08-16 16:22:49.827  INFO 2531 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$458dede9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-16 16:22:50.671  INFO 2531 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8070 (http)
+2019-08-16 16:22:50.764  INFO 2531 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-16 16:22:50.765  INFO 2531 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-16 16:22:50.999  INFO 2531 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-16 16:22:51.000  INFO 2531 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4829 ms
+2019-08-16 16:22:51.556  INFO 2531 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-16 16:22:52.147  INFO 2531 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-16 16:22:52.380  INFO 2531 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-16 16:22:52.556  INFO 2531 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-16 16:22:52.558  INFO 2531 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-16 16:22:52.965  INFO 2531 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-16 16:22:53.468  INFO 2531 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-08-16 16:22:54.813  INFO 2531 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-16 16:22:56.410  INFO 2531 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-16 16:22:56.601  WARN 2531 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-16 16:22:57.294  INFO 2531 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8070 (http) with context path ''
+2019-08-16 16:22:57.303  INFO 2531 --- [           main] com.bhegde.tryapp.MainApp                : Started MainApp in 12.533 seconds (JVM running for 13.517)
+2019-08-16 16:48:31.545  INFO 2531 --- [       Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-16 16:48:31.568  INFO 2531 --- [       Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-16 16:48:31.602  INFO 2531 --- [       Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-16 16:48:31.692  INFO 2531 --- [       Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
