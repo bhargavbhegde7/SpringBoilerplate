@@ -23,8 +23,7 @@ pipeline {
     }
     stage('docker_run_latest_build') {
       steps {
-        sh '''docker run -d -t --name spring-app-container -p 8070:8070 spring-app:late
-st'''
+        sh 'docker run -d -t --name spring-app-container -p 8070:8070 spring-app:latest'
       }
     }
   }
