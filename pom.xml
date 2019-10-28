@@ -3,7 +3,7 @@
   <groupId>com.bhegde.try</groupId>
   <artifactId>SpringHello</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <name>SpringHello Maven Webapp</name>
   <url>http://maven.apache.org</url>
     <scm>
