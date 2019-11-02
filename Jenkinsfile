@@ -1,29 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('build') {
+    stage('ssh into the build server') {
       steps {
-        sh 'mvn clean package'
+        sh 'ssh 34.66.169.153'
       }
     }
-    stage('create_docker_image') {
+    stage('run command inside the build server') {
       steps {
-        sh 'docker build -t spring-app -f Dockerfile .'
-      }
-    }
-    stage('stop_running_container') {
-      steps {
-        sh 'docker stop spring-app-container'
-      }
-    }
-    stage('remove_running_container') {
-      steps {
-        sh 'docker rm spring-app-container'
-      }
-    }
-    stage('docker_run_latest_build') {
-      steps {
-        sh 'docker run -d -t --name spring-app-container -p 8070:8070 spring-app:latest'
+        sh 'ls -ltrh'
       }
     }
   }
