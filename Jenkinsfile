@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('ssh into the build server') {
       steps {
-        sh 'ssh g1_hegde_bhargava@34.66.169.153; hostname'
+        sh 'ssh -T 34.66.169.153; hostname'
       }
     }
     stage('run command inside the build server') {
