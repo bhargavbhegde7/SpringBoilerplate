@@ -1,6 +1,7 @@
 package com.bhegde.tryapp.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -25,9 +26,8 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public User getUserById(int id) {
-		// TODO Auto-generated method stub
-		return null;
+	public Optional<User> getUserById(int id) {
+		return userDao.findById(id);
 	}
 
 }

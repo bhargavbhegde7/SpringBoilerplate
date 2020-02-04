@@ -1,6 +1,7 @@
 package com.bhegde.tryapp.dao;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -23,6 +24,11 @@ public class UserDaoImpl implements UserDao{
 	@Override
 	public User createUser(User user) {
 		return userRepository.save(user);
+	}
+
+	@Override
+	public Optional<User> findById(int id) {
+		return userRepository.findById(id);
 	}
 
 }
