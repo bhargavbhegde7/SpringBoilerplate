@@ -7,12 +7,28 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 
 import java.util.Arrays;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 @SpringBootApplication
 public class MainApp {
 	public static void main(String[] args) {
-        SpringApplication.run(MainApp.class, args);	
+        SpringApplication.run(MainApp.class, args);
+        /*System.out.println("Hello, WOrld!");
+        ExecutorService service = Executors.newFixedThreadPool(1);
+        service.submit(()->{
+                System.out.println("Inside the thread");
+                try {
+                        Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                        e.printStackTrace();
+                }
+        });
+            //service.shutdown();
+            System.out.println("after submission");*/
+
         }
+
 
     @Bean
     FilterRegistrationBean myFilterRegistration2 () {
